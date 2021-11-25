@@ -173,23 +173,23 @@ header {
 }
 .header-icon-mail {
     margin-right: 10px;
-    fill: currentColor;
+    fill: var(--color-text-description);
     width: 16px;
     height: 12px;
 }
 .header-icon-mail:hover,
 .header-icon-mail:focus {
-    fill: currentColor;
+    fill: var(--accent-color);
 }
 .header-icon-phone {
     margin-right: 10px;
-    fill: currentColor;
+    fill: var(--color-text-description);
     width: 10px;
     height: 16px;
 }
 .header-icon-phone:hover,
 .header-icon-phone:focus {
-    fill: currentColor;
+    fill: var(--accent-color);
 }
 
 /*hero*/
@@ -268,6 +268,20 @@ header {
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.7;
+}
+.features-icon {
+    width: 70px;
+    height: 70px;
+}
+.features-icon-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
 }
 
 /*actitvity*/
@@ -427,8 +441,8 @@ header {
     border-right: 1px solid var(--portfolio-border-color);
     border-bottom: 1px solid var(--portfolio-border-color);
 }
-/*our-clients*/
-.our-clients-header {
+/*our-cusromers*/
+.our-cusromers-header {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -437,13 +451,13 @@ header {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-.our-clients-list {
+.our-cusromers-list {
     display: flex;
 }
-.our-clients-items:not(:last-child) {
+.our-cusromers-items:not(:last-child) {
     margin-right: 30px;
 }
-.our-clients-link {
+.our-cusromers-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -453,12 +467,12 @@ header {
     border: 1px solid #afb1b8;
     border-radius: 4px;
 }
-.our-clients-link:hover,
-.our-clients-link:focus {
-    fill: var(--color-text-description);
+.our-cusromers-link:hover,
+.our-cusromers-link:focus {
+    fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
-.our-clients-icons {
+.our-cusromers-icons {
     width: 106px;
     height: 60px;
 }
