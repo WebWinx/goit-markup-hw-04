@@ -154,21 +154,6 @@ header {
     align-items: center;
     margin-left: auto;
 }
-.overlay {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 200px 0px;
-    background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/imgoverlay.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 .contact-item:not(:last-child) {
     margin-right: 50px;
@@ -186,6 +171,26 @@ header {
 .contact-link:focus {
     color: var(--accent-color);
 }
+.header-icon-mail {
+    margin-right: 10px;
+    fill: currentColor;
+    width: 16px;
+    height: 12px;
+}
+.header-icon-mail:hover,
+.header-icon-mail:focus {
+    fill: currentColor;
+}
+.header-icon-phone {
+    margin-right: 10px;
+    fill: currentColor;
+    width: 10px;
+    height: 16px;
+}
+.header-icon-phone:hover,
+.header-icon-phone:focus {
+    fill: currentColor;
+}
 
 /*hero*/
 .hero {
@@ -193,6 +198,7 @@ header {
     text-align: center;
     padding: 200px 0;
 }
+
 .hero-title {
     width: 696px;
     font-weight: 900;
@@ -219,6 +225,22 @@ header {
     margin: 0 auto;
     border-radius: 4px;
 }
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0px;
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/imgoverlay.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /*features*/
 .features {
     padding-bottom: 0;
@@ -313,6 +335,33 @@ header {
     letter-spacing: 0.03em;
     color: var(--paragraf-color);
 }
+.specialist-social {
+    display: inline-flex;
+    align-content: center;
+}
+.specialist-icon {
+    width: 20px;
+    height: 20px;
+}
+.specialist-icon-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #afb1b8;
+}
+.specialist-icon-back:hover,
+.specialist-icon-back:focus {
+    fill: var(--buttom-text-color);
+    background-color: var(--title-first-color);
+}
+.specialist-icon-back:not(:last-child) {
+    margin-right: 10px;
+}
+
 /*button*/
 .button-exclude {
     display: flex;
@@ -378,6 +427,41 @@ header {
     border-right: 1px solid var(--portfolio-border-color);
     border-bottom: 1px solid var(--portfolio-border-color);
 }
+/*our-clients*/
+.our-clients-header {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.our-clients-list {
+    display: flex;
+}
+.our-clients-items:not(:last-child) {
+    margin-right: 30px;
+}
+.our-clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    fill: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+.our-clients-link:hover,
+.our-clients-link:focus {
+    fill: var(--color-text-description);
+    border: 1px solid var(--accent-color);
+}
+.our-clients-icons {
+    width: 106px;
+    height: 60px;
+}
 /*footer*/
 footer {
     background-color: var(--bg-color-section);
@@ -408,4 +492,43 @@ address {
 }
 .address-link {
     color: var(--bg-color-team);
+}
+.footer-list-text {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--btn-text-color);
+}
+.footer-list:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-icons-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon {
+    width: 20px;
+    height: 20px;
+}
+.footer-icon:hover,
+.footer-icon:focus {
+    fill: var(--);
+}
+.footer-icons-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: var(--btn-text-color);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-icons-links:hover,
+.footer-icons-links:focus {
+    background-color: var(--accent-color);
 }
