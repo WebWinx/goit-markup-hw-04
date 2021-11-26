@@ -173,7 +173,7 @@ header {
 }
 .header-icon-mail {
     margin-right: 10px;
-    fill: var(--color-text-description);
+    fill: currentColor;
     width: 16px;
     height: 12px;
 }
@@ -183,7 +183,7 @@ header {
 }
 .header-icon-phone {
     margin-right: 10px;
-    fill: var(--color-text-description);
+    fill: currentColor;
     width: 10px;
     height: 16px;
 }
@@ -227,16 +227,13 @@ header {
 }
 .overlay {
     max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 200px 0px;
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
         ),
         url(../images/imgoverlay.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -269,18 +266,12 @@ header {
     letter-spacing: 0.03em;
     line-height: 1.7;
 }
-.features-icon {
-    width: 70px;
-    height: 70px;
-}
 .features-icon-back {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    background-color: #f5f4fa;
+    background-color: var(--bg-color-team);
     border-radius: 4px;
 }
 
@@ -353,6 +344,9 @@ header {
     display: inline-flex;
     align-content: center;
 }
+. specialist-social-links {
+    margin-right: 10px;
+}
 .specialist-icon {
     width: 20px;
     height: 20px;
@@ -361,7 +355,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
